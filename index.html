@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>
+        Lard Lad Donuts
+    </title>
+    <link rel="icon" type="image/x-icon" href="adonuts.png">
+    <link href="donuts.css" rel="stylesheet">
+    <script type="text/javascript" src="donuts.js" defer></script>
+
+
+</head>
+
+
+<body>
+
+
+    <div class="tituloo">Lard Lad Donuts</div>
+    <div class="subTitulo">Todos os donuts por 3 reais cada, cake ou glazed</div>
+    <div class="container">
+        <div class="container3">
+            <div>
+                <h2>Nome:</h2><input type="array" id="nome" class="inpute" size="27" placeholder="Nome">
+            </div>
+            <div>
+                <h2>Cake donuts:</h2><input type="number" value="" id="cake" class="inpute" style="width: 153px"
+                    placeholder="Número de Cake donuts" onchange="calcular()">
+            </div>
+            <div>
+                <h2>Glazed donuts:</h2><input type="number" value="" id="glazed" class="inpute" style="width: 132px"
+                    placeholder="Número de Glazed donuts" onchange="calcular()">
+            </div>
+            <div>
+                <h2>Tempo para pegar:</h2><input type="number" value="" id="tempo" class="inpute" style="width: 100px"
+                    placeholder="Tempo">
+            </div>
+            <button onclick="pedir()" style="cursor:pointer" id="calcularValor">Pedir</button><button
+                onclick="mostrarPedidos()" style="cursor:pointer" id="pedidos">Pedidos</button>
+
+        </div>
+        <div class="container2">
+            <div class="subtotal" id="subtotal">
+
+            </div>
+            <div class="taxa" id="taxa">
+
+            </div>
+            <div class="total" id="total">
+
+            </div><br>
+        </div>
+        <div class="container4" id="container4">
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
